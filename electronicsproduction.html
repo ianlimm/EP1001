@@ -53,10 +53,76 @@
       <h3><u>Step 2: G-code</u></h3>
       <p>
         In the second step, after obtaining a png file of the circuit layout and outline, i used the 
-        <a href="https://skeatz.github.io/mods/">mods</a> to set the G-code.
+        <a href="https://skeatz.github.io/mods/">mods</a> to set the G-code. To enable the programme,
+        right click to begin > programs > open programs > G-code: mill 2D pcb. On the programme itself,
+        i clicked on "mill traces" for the traces and "mill outline" for the outlines. Making sure to 
+        adhere to certain settings like cut depth and tool diameter provided.
       </p>
       <p>
-        Which will then be used 
+        <img src="./images/mods1.png"width="49%">
+        <img src="./images/mods2.png"width="49%">
+        <img src="./images/cncsettings.png"width="65%"class="center">
+      </p>
+      <h3><u>Step 3: Milling</u></h3>
+      <p>
+        After the G-code has been generated, i could prepare a board to start the milling process, but
+        before that, i had to set the X and Y origin and thereafter the Z axis in which a probe was
+        used. The next step was to add paste the board onto the cardboard base with double-sided tape
+        and masking tape to make sure that the board does not shift during the milling process.
+      </p>
+      <p>>
+        <img src="./images/taped board.png"width="65%"class="center">
+      </p>
+      <p>
+        The correct cutter must then be chosen for the correct cutting process, 0.1mm 30 degree V bit
+        for etching and a 0.8mm end mill bit for cutting the outline.
+      </p>
+      <p>
+        <img src="./images/1mm 30deg.png"width="49%">
+        <img src="./images/0.8 mm bit.png"width="49%">
+      </p>
+      <p>
+        The 0.1mm 30 degree V bit was then installed and before starting the etching process on the 
+        board.
+      </p>
+      <p>
+        <img src="./images/electronics prod 3 (2).jpeg"width="49%">
+        <img src="./images/helloworldboard.jpeg"width="49%">
+      </p>
+      <p>
+        After the etching process is completed, the outline can now be milled. Hence, i changed the
+        cutter to the 0.8mm end mill bit and without changing the origin of the X and Y axis,
+        the Z axis was recallibrated, before the outline of the board was milled.
+      </p>
+      <p>
+        <img src="./images/electronics prod 4.jpeg"width="65%"class="center">
+      </p>
+      <p>
+        The board was then sanded slighly with fine sand paper to remove any burs created during the
+        milling process. 
+      </p>
+      <h3><u>Step 4: Soldering</u></h3>
+      <p>
+        After the board was sanded, the components was ready to be soldered onto the board.
+      </p>
+      <p>
+        I reffered to Brian’s board image and schematic to determine if the components are placed 
+        correctly in the right orrientation.
+      </p>
+      <p><img src="./images/fabtinyisp board img.png"width="65%"class="center"></p>
+      <p>
+        And with a pair of tweazers and a solderin iron equipped with the smallest tip, i started to
+        solder the components onto the board making sure to use as little solder as possible.
+      </p>
+      <p>
+        <img src="./images/programmer.png"width="65%"class="center">
+      </p>
+      <p>
+        The cable to connect the ISP programmer to another programmer was also created using 2 heads
+        and some wires
+      </p>
+      <p>
+        <img src="./images/connector.png"width="65%"class="center"></p>
       </p>
     </div>
   </body>

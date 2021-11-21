@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+      <link rel="stylesheet" href="index.css">
+      <h1 id="head">My Project Web Page</h1>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About me</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+        <div class="dropdown-content">
+          <a href="electronicsproduction.html">Electronics Production</a>
+          <a href="electronicsdesign.html">Electronics Design</a>
+          <a href="2dmachining.html">2D Machining</a>
+          <a href="embededprogramming.html">Embeded Programming</a>
+          <a href="moldingandcasting.html">Molding and Casting</a>
+          <a href="3dmachining.html">3D Machining</a>
+        </div>
+      </li>
+      <li><a href="finalproject.html">Final Project</a></li>
+    </ul>
+    <div class="content">
+      <h2>Electronic Design</h2>
+      <p>
+        In electronic design, the basic circuit is made before generating the png for the G-code. we
+        have to use a CAD tool to design the schematic and layout.
+      </p>
+      <h3><u>Step 1: EAGLE</u></h3>
+      <p>
+        I started by downloading and installing the component librbary needed for the board.
+        (<a href="https://gitlab.fabcloud.org/pub/libraries/electronics">fab.lr</a>)
+      </p>
+      <p>
+          I then placed the downloaded library into the EAGLE library, before going to the directory
+          to select the library.
+      </p>
+      <h3><u>Step 2: Creating the schematic</u></h3>
+      <p>
+        <ol>
+        <li>Add in the right components for your board.</li><br>
+        <li>Use NET tool to wire our parts together.</li><br>
+        <li>Use NAME tool to identify our components/name our nets.</li><br>
+        <li>Use VALUE tool to set resistors resistance or capacitors capacitance.</li><br>
+        <li>Verify the design using ERC.</li><br>
+        <li>Go to board view to position our components and route traces.</li><br>
+        </ol>
+      </p>
+      <p>
+          You can refer to this link for more information on how to create a schematic.
+          <a href="https://learn.sparkfun.com/tutorials/using-eagle-schematic">
+          https://learn.sparkfun.com/tutorials/using-eagle-schematic</a>
+      </p>
+      <p>
+        <img src="./images/circuit.png"width="65%"class="center">
+      </p>
+      <p>
+          Once the layout was done, i had to switch to Board view and i re-arranged all the 
+          components to fit the wires properly using the manual routing system, finding the shortest
+          and simplest route possible.
+      </p>
+      <p>
+        <img src="./images/circuit2.png"width="65%"class="center">
+      </p>
+      <p>
+        Finally after the layout was done, the outline was added to finalise the circuit.
+      </p>
+      <p>
+        <img src="./images/milling.png"width="65%"class="center">
+      </p>
+      <h3><u>Step 3: G-code, milling and soldering</u></h3>
+      <p>
+          Next, using the same <a href="https://skeatz.github.io/mods/">mods</a> programme for the 
+          electronics production i used it to create the G-code.
+      </p>
+      <p>
+        The next few steps for milling and soldering was repeated for the 
+        <a href="https://ianlimm.github.io/EP1001/electronicsproduction">electronics production.</a>
+      </p>
+      <h3><u>Final Product</u></h3>
+      <p>
+        <img src="./images/helloworld.png"width="65%"class="center">
+      </p>
+    </div>
+  </body>
+</html>
