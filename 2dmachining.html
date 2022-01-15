@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+      <link rel="stylesheet" href="index.css">
+      <h1 id="head">My Project Web Page</h1>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About me</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+        <div class="dropdown-content">
+          <a href="electronicsproduction.html">Electronics Production</a>
+          <a href="electronicsdesign.html">Electronics Design</a>
+          <a href="2dmachining.html">2D Machining</a>
+          <a href="embededprogramming.html">Embeded Programming</a>
+          <a href="moldingandcasting.html">Molding and Casting</a>
+        </div>
+      </li>
+      <li><a href="finalproject.html">Final Project</a></li>
+    </ul>
+    <div class="content">
+      <h2>2D machining</h2>
+      <p>
+       In this segment, we will be doing Computer Numerical Control (CNC) to cut out a life sized 
+       piece of furniture using a large scale CNC machine which enables it to cut stock materials upwards
+       of 1200mm/700mm/15-25mm.
+      </p>
+      <p>
+       Before we start cutting out the pieces of our furniture design, we had to pass a competency test
+       first, to familiarize ourselves with using the mcahine.  
+      </p>
+      <h3><u>Steps to operate the CNC Machine</u></h3>
+      <ol>
+          <li>Put the stock on the bed.</li><br>
+          <li>Using an electric drill, screw on some screws at the corners and sides of the stock.</li><br>
+          <li>There should be a sacrificial layer of wood under the stock.</li><br>
+          <li>Import the design of your choice into the computer.</li><br>
+          <li>
+              Set the operations u want done the your designs ie. pocketing, contouring... and
+              generate the G-code.
+          </li><br>
+          <li>Simulate the cutting on the computer and make sure everything is correct.</li><br>
+          <li>Set the X and Y axis, and set the Z axis using the probe.</li><br>    
+          <li>Switch on the dust collector.</li><br>
+          <li>Start the cutting process.</li><br>
+          <li>Remove the tabs using a sharp tool.</li><br>
+          <li>Clean up the product using sandpaper.</li><br>
+      </ol>
+      <h3><u>Finished Product-Mug Holder</u></h3>
+      <p>
+        <img src="./images/competency1.jpg"width="49%">
+        <img src="./images/competency2.jpg"width="49%">
+      </p>
+      <h3><u>Furniture Design</u></h3>
+      <p>
+          I first designed a stool on Fusion360 taking dimensions from a stool i had at home.
+      </p>
+      <h3><u>Final Design</u></h3>
+      <p>
+         <iframe src="https://ichat1891.autodesk360.com/shares/public/SH9285eQTcf875d3c53997a8b1b
+         8ed376796?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true"
+         mozallowfullscreen="true"  frameborder="0"></iframe>
+      </p>
+       <p>
+           I also had to download a new tool into fusion 360 to add dogbone fillets onto sharp edges
+           in my design.The reason so is due to the fact that the inner corners of our designs can 
+           never be sharper than the diameter of the cutting tool. This is because the router bits 
+           are round hence, it is not possible to get orthogonal corners at perfect right angles 
+           when cutting out the sheet materials like plywood with a CNC machine, so instead, 
+           these corners will be rounded inwards.
+       </p>
+       <p>
+           The next step was to export the sides of the stool as a DXF and to prepare it for cutting.
+       </p>
+    </div>
+  </body>
+</html>

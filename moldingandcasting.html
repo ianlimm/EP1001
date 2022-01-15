@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+      <link rel="stylesheet" href="index.css">
+      <h1 id="head">My Project Web Page</h1>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About me</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+        <div class="dropdown-content">
+          <a href="electronicsproduction.html">Electronics Production</a>
+          <a href="electronicsdesign.html">Electronics Design</a>
+          <a href="2dmachining.html">2D Machining</a>
+          <a href="embededprogramming.html">Embeded Programming</a>
+          <a href="moldingandcasting.html">Molding and Casting</a>
+        </div>
+      </li>
+      <li><a href="finalproject.html">Final Project</a></li>
+    </ul>
+    <div class="content">
+      <h2>Molding and Casting</h2>
+      <p>
+        In the segment, i will be learning how to produce 3D shapes through the process of creating a 
+        mold and casting it to produce the final product.
+      </p>
+      <h3><u>Step 1: Design</u></h3>
+      <p>
+        Similar to the other assignments, the first step was to design the shape that i wanted on 
+        Fusion360. I made a cone shape and cut out a sphere at the top of the cone, making sure that
+        the height of the cone is 15mm tall.
+      </p>
+      <p>
+        <img src="./images/mnc1.png"width="65%"class="center">
+      </p>
+      <p>
+          Next, i created the walls of height 20mm and 5mm thickness. This is to create sort of a 
+          container to store the silicon for creating the cast later on. It is also very important that
+          the height of the cone is smaller that the height of the walls. I then joined them together
+          finalising the product.
+      </p>
+      <p>
+        <img src="./images/mnc2.png"width="49%">
+        <img src="./images/mnc3.png"width="49%">
+      </p>
+      <p>
+        <iframe src="https://ichat1891.autodesk360.com/shares/public/SH9285eQTcf875d3c539a79a686feb2404
+        c8?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" 
+        mozallowfullscreen="true"  frameborder="0"></iframe>
+      </p>
+      <p>
+          The next step was to generate the G-code using Fusion360, I then switched the modes from 
+          Design to Manufacturing.I decided to split the process of milling my mould out into two parts 
+          (Roughing and Finishing).Using the pocketing function, it will allow the mill to clear large 
+          quantities of material in the mold.
+      </p>
+      <p>
+          The first step was to create a new tool for the cutting process, hence i defined it's geomatry 
+          after a 3mm end mill.
+      </p>
+      <p>
+        <img src="./images/cuttergeom.png"width="65%"class="center">
+      </p>
+      <p>
+          I then defined its toolpath perimeters, editing its feed, speed, spindle speed and cutting 
+          feedrate. I also created a new set of parameters for Passes, edited Stepover and Stepdown.
+          I also added in stock to leave as this was only the roughing cut of the mold.
+      </p>
+      <p>
+        <img src="./images/cutting1.png"width="49%">
+        <img src="./images/cutting2.png"width="49%">
+      </p>
+      <p>
+          I then simmulated the roughing cut to make sure it was cutting everything correctly, before 
+          moving on the creating the toolpath for the finishing cut.
+      </p>
+      <p>
+          For the finishing cut, there were some factors that were edited to make sure the cutting and 
+          finishing was smooth. The excess stock to leave was also unchecked, the feedrate and cutting 
+          speed were also reduced.
+      </p>
+      <p>
+        <img src="./images/cutting3.png"width="49%">
+        <img src="./images/cutting4.png"width="49%">
+      </p>
+      <p>
+          I simmulated the entire cutting process from start to finiss and after checking that 
+          everything was correct, i went on the generate the G-code using the post process function.
+          I selected the correct CNC machine that i was using, and coppied the file onto a thumbdrive.
+      </p>
+      <p>
+        <img src="./images/sim2.png"width="49%">
+        <img src="./images/gcode1.png"width="49%">
+      </p>
+      <p>
+          The next step was to prepare CNC machine for cutting out my mold. I first stuck the foam onto
+          the bed of the machine using double-sided tape to secure it onto the machine. I then loaded 
+          the NC file contatining the Gcode onto the laptop, set up the X, Y and Z axis. And thereafter,
+          started the milling process.
+      </p>
+      <p>
+        <img src="./images/mold1.jpg"width="49%">
+        <img src="./images/mold2.jpg"width="49%">
+      </p>
+      <h3><u>Final Mold</u></h3>
+      <p><img src="./images/moldfinal.jpg"width="65%"class="center"></p>
+      <p>
+          Next, i put on gloves for safety, before mixing a 1:1 ratio of ___ for the silicon mixture. 
+          The mixture was then stired for a few minutes, to ensure that the silicon was well mixed
+          together.
+      </p>
+      <p>
+        <img src="./images/silicon1.jpg"width="49%">
+        <img src="./images/silicon2.jpg"width="49%">
+      </p>
+      <p>
+          Next, the silicon mixture was poured onto one corner of the mold so as to prevent any air 
+          bubbles being formed in the mold. To further ensure that there were no air bubbles formed 
+          in the mold, I lightly tapped the mold onto the table a few times.
+      </p>
+      <p><img src="./images/molding2.jpg"width="65%"class="center"></p>
+      <p>
+          The mold was then left to set over the weekend, to ensure that it has fully hardened.
+      </p>
+      <p>
+          Next, i removed the mold from the foam, and cleaned it up abit to prepare it for the next 
+          step.
+      <p>
+        <p><img src="./images/cast1.jpg"width="65%"class="center"></p>
+      <p>
+          Continuing with the process, i mixed up a mixture of resin, and repeated the steps of pouring 
+          the mixture into the cast.
+      </p>
+      <p>
+        <img src="./images/resin1.jpg"width="49%">
+        <img src="./images/resin2.jpg"width="49%">
+      </p>
+      <p>
+          The resin was the poured into the cast, using the same method of pouring it into on of the 
+          four corners. The resin was then left to set for about 2 hours, while it hardened completely.
+          To give the final product.
+      </p>
+      <h3><u>Final Product</u></h3>
+      <p><img src="./images/finalcast.jfif"width="65%"class="center"></p>
+    </div>
+  </body>
+</html>
