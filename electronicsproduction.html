@@ -123,6 +123,49 @@
       <p>
         <img src="./images/connector.png"width="65%"class="center"></p>
       </p>
+      <h3><u>Setting up the ISP Programmer</u></h3>
+      <p>
+        To start the set up of the ISP Programmer, i had to download a few different softwares that 
+        would be needed later on in the process.
+      </p>
+      <ul1>
+        <li>Atmel GNU Toolchain</li><br>
+        <li>GNU Make</li><br>
+        <li>avrdude</li><br>
+      </ul1>
+      <p>
+        Next, i updated the path for the installed softwares as windows was unable to recognise the
+        softwares.
+      </p>
+      <p><img src="./images/path.png"width="65%"class="center"></p>
+      <p>
+        I then plugged in the sample ISP Programmer to mine using the cable that i made previously to
+        configure my ISP.
+      </p>
+      <p><img src="./images/electronics program 10.jpeg"width="65%"class="center"></p>
+      <p>
+        Next,i downloaded and extracted the  zip file containing the firmware source code, 
+        then run "make flash" in the command prompt with cd into the source code directory, which will then 
+        build the hex file that will get programmed onto the ATtiny85. After the command is completed, 
+        a file called fts_firmware.hex will be generated. 
+      </p>
+      <p>
+        Next, i typed in "make fuses" into the command prompt to programme the fuse settings on the MCU.
+      </p>
+      <p>
+        I then checked if the board was working perfectly or not by connecting the programmer itself 
+        into my computer.In the windows Device Manager if nothing is wrong, the USB devices will 
+        appear as USBtinySPI device. 
+      </p>
+      <p><img src="./images/check.png"width="65%"class="center"></p>
+      <p>
+        If everything has been checked and there are no issues, i ran the last command "make rstdisbl"
+        to blow the reset fuse, and finalise the programmer.
+      </p>
+      <p>
+        To test if the board is working properly, i used it to programme the hello world board later on
+        in "Embeded Programming".
+      </p>
     </div>
   </body>
 </html>

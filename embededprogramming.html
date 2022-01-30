@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+      <link rel="stylesheet" href="index.css">
+      <h1 id="head">My Project Web Page</h1>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About me</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Projects</a>
+        <div class="dropdown-content">
+          <a href="electronicsproduction.html">Electronics Production</a>
+          <a href="electronicsdesign.html">Electronics Design</a>
+          <a href="2dmachining.html">2D Machining</a>
+          <a href="embededprogramming.html">Embeded Programming</a>
+          <a href="moldingandcasting.html">Molding and Casting</a>
+        </div>
+      </li>
+      <li><a href="finalproject.html">Final Project</a></li>
+    </ul>
+    <div class="content">
+      <h2>Embeded Programming</h2>
+      <h3><u>Overview of Attiny85 microcontroller</u></h3>
+      <p>
+        The ATtiny85 is a microcontroller in a similar vein to the Arduino, 
+        but with much less IO pins, smaller memory and a smaller form factor. 
+        In fact, when we talk about the ATtiny85 we refer to the IC itself rather than the board. 
+        The ATtiny85 can be used as a bare chip on a breadboard, as long as you can supply the 
+        correct power for the device.
+     </p>
+      <p>
+        <img src="./images/features.png"width="65%"class="center">
+      </p>
+      <h3><u>Pin Configuration</u></h3>
+      <img src="./images/pinconfig.png"width="65%"class="center">
+      <h3><u>Writing the Blink LEDs Code</u></h3>
+      <img src="./images/blink.jpg"width="65%"class="center">
+      <p>I then had to set the clock signal i wanted to use, before burning te bootloader to confirm.</p>
+      <p>
+        <img src="./images/clock.jpg"width="49%">
+        <img src="./images/burn boot.jpg"width="49%">
+      </p>
+      <p>
+          The last step was to verify/compile the code, and it should now work.
+      </p>
+    </div>
+  </body>
+</html>
